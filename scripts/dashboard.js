@@ -15,6 +15,8 @@ function getValues(panel) {
         return array;
     } 
 
+const socket = io();
+
 document.addEventListener('DOMContentLoaded', function() {
     elements = {
         "pauta": {
@@ -72,6 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         console.log(data.pauta);
         console.log(data.pautaActiveIndex);
+
+        socket.emit('update pauta', data);
     });
 
     elements.casters.update.addEventListener("click", function(){
@@ -85,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
         data.castersCount = count;
         console.log(data.casters);
         console.log(data.castersCount);
+
+        socket.emit('update casters', data);
     })
 
 });

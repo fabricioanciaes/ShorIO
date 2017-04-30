@@ -1,10 +1,23 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="scripts/main.css">
+        <script src="scripts/socket.io.min.js"></script>
+        <script>
+            const socket = io();
+
+            socket.on('update pauta', function(data) {
+                console.log(data)
+            });
+
+            socket.on('update casters', function(data) {
+                console.log(data)
+            });
+        </script>
     </head>
     <body>
         <section class="panel">
             
         </section>
+
+        
     </body>
 </html>
