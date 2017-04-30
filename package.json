@@ -12,7 +12,6 @@
   "devDependencies": {
     "bulma": "^0.4.1",
     "express": "^4.15.2",
-    "materialize-css": "^0.98.2",
     "socket.io": "^1.7.3"
   }
 }
