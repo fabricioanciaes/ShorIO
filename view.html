@@ -1,10 +1,26 @@
 <html>
     <head>
+<<<<<<< HEAD
         <link rel="stylesheet" type="text/css" href="styles/podcast.css">
+=======
+        <script src="scripts/socket.io.min.js"></script>
+        <script>
+            const socket = io();
+
+            socket.on('update pauta', function(data) {
+                console.log(data)
+            });
+
+            socket.on('update casters', function(data) {
+                console.log(data)
+            });
+        </script>
+>>>>>>> 217e46e1ad70c07da61164fec57e0f93d0516359
     </head>
     <body>
         <div id="wrapper">
             
+<<<<<<< HEAD
             
             <div class="caster">
                 <div class="caster-video"></div>
@@ -52,5 +68,10 @@
         </div>
 
 
+=======
+        </section>
+
+        
+>>>>>>> 217e46e1ad70c07da61164fec57e0f93d0516359
     </body>
 </html>
